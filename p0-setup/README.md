@@ -44,7 +44,7 @@ When a Project is released, you'll have to import it.  First, update the reposit
 
 You'll get a popup like this one, which you can safely close:
 
-![Pull Window](.doc/pull_win.jpg)
+![Pull Window](.doc/gitpull.png)
 
 Then, you will see the new project loaded into the Working Tree:
 
@@ -71,7 +71,6 @@ Then, after you submit, the autograder will run. If everything compiled correctl
 then you should get a score back from gradescope.
 
 ![Gradescope](.doc/gradescope.png)
-![Gradescope](.doc/gradescope1.png)
 ![Gradescope](.doc/gradescope2.png)
 ![Gradescope](.doc/gradescope3.png)
 ![Gradescope](.doc/gradescope4.png)
