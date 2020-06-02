@@ -9,7 +9,7 @@ To set up your Eclipse environmenet for this purpose, follow the steps in this g
   
 There is now a video you can watch which will go through most of the processes here. 
 It can be found:
-![Video] (project0.mp4)
+![Video] (https://drive.google.com/file/d/13ONRg4x6onNo3cs34jdRb5UHOr6KnlJu/view?usp=sharing "video")
 
 ## Adding the Repository to Eclipse
 
