@@ -5,6 +5,12 @@ the CVS system you may have used for cmsc132.
 Ideally, this should be an easier way to check out projects and discussion exercises.  
 To set up your Eclipse environmenet for this purpose, follow the steps in this guide.
 
+## Video
+  
+There is now a video you can watch which will go through most of the processes here. 
+It can be found:
+![Video] (project0.mp4)
+
 ## Adding the Repository to Eclipse
 
 The first thing we have to do is add the public repo to our Eclipse environment.  
@@ -65,12 +71,22 @@ You should now be able to work on the project
 
 ## Submitting Projects
 
-When you are ready to submit a project, go to gradescope and click the 132 class.
+YOu can zip the file using eclipse and upload this zip file. To eport as a zip 
+file, you can select the project, click file->export. A popup window should appear
+asking how you want to export the project. Click general->archieve file. Then you
+should check the project folder as seen in the below images. Then take note of where
+you exported it. Then you can hit finish. Make sure all the settings look like the one
+in the photo below. 
+
+Then when you are ready to submit a project, go to gradescope and click the 132 class.
 Then click on the relevant assignment and submit the files which you modified.
 Make sure the names of all the files needed are shown. 
 Then, after you submit, the autograder will run. If everything compiled correctly, 
 then you should get a score back from gradescope.
 
+![Export](.doc/eclipse1.png)  
+![Export](.doc/eclipse2.png)  
+![Export](.doc/eclipse3.png)  
 ![Gradescope](.doc/gradescope.png)  
 ![Gradescope](.doc/gradescope2.png)  
 ![Gradescope](.doc/gradescope3.png)  
