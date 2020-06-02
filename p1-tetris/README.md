@@ -66,7 +66,7 @@ You are expected to implement methods for the Tetromino, I, J, L, O, S, T and Z 
 We encourage you to run the game GUI and interact with the game. However, such an interaction is not guaranteed to test the full range of your code. As such, we also encourage you to write student tests. Student tests demonstrating a particular issue you are encountering with your code will be requested upon seeking help during office hours.
 
 # Submission
-To submit your project, zip the model folder and upload the zipped file to gradescope.
+To submit your project, zip the project folder and upload the zipped file to gradescope.
 
 # Tips on Getting Started
 You have been provided with a class to represent each possible Tetris piece (a tetromino). We suggest that you start with the simplest tetromino (like O or I).
