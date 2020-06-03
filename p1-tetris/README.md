@@ -43,6 +43,18 @@ Although the layout of a tetromino is set (because its shape is set) for each of
 
 ![i rotation diagram](./images/i_rotation.png)
 
+## Initial Positions
+So the inital position of each piece is relative to the size of the board.
+One way to think about it is, there is a desginanted spot on each piece which 
+is to be placed in the center of the board and the rest of the piece is to built
+ around that. The center of the board is always at index Floor(MaxCols / 2).
+
+Here is an example for a game board that has 10 columns:
+
+![initial positions](./images/initial.png)
+
+The black square represents the column that is index Floor(10 / 2) *(ie 5)*
+
 # Game Play
 A random sequence of Tetrominos will fall down the playing field from the centre. The goal of the game is to fill the gaps horizontally. When an entire row is filled, the rows above it will collapse down by one row. A player can move a tetromino left/right using the corresponding arrow keys. They can also rotate the  tetromino left (counter-clockwise) 90 degrees at a time by pressing the z key.
 
