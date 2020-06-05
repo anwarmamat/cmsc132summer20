@@ -1,5 +1,5 @@
 # Project 1: Tetris Game
-## Due Date: Jun 07, 2019 11:59 PM
+## Due Date: Jun 11, 2019 11:59 PM
 ## Assignment Type: Closed [(see policy)](http://www.cs.umd.edu/class/summer2019/cmsc132/openClosedPolicy.shtml)
 
 # Overview
