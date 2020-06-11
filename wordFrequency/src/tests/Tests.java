@@ -1,0 +1,108 @@
+package tests;
+
+import static org.junit.Assert.*;
+import junit.framework.TestCase;
+import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+import frequency.Frequency;
+import frequency.WordFrequency;
+
+public class Tests {
+
+	@Test
+	public void testEinstein() {
+		String answer = WordFrequency.freq("data/einstein.txt",20);
+		assertTrue(TestsSupport.isCorrect("data/pubEinstein.txt", answer));
+	}
+	
+	@Test
+	public void test0() {
+		String answer = WordFrequency.freq("data/test0.txt",10);
+		assertTrue(TestsSupport.isCorrect("data/pubTest0.txt", answer));
+	}
+	
+	@Test
+	public void testWarPeace() {
+		String answer = WordFrequency.freq("data/war_peace.txt", 20);
+		assertTrue(TestsSupport.isCorrect("data/pubWar_peace.txt", answer));
+	}
+	
+	@Test
+	public void testInsert1() {
+		Frequency<String> freq = new Frequency<>();
+		freq.insert("alice");
+		String answer = freq.getWords(1).trim();
+		assertEquals("(alice,1)", answer);
+	}
+	
+	@Test
+	public void testGetCount1() {
+		
+		Frequency<String> freq = new Frequency<>();
+		freq.insert("alice");
+		freq.insert("alice");
+		freq.insert("cat");
+		freq.insert("bob");
+		freq.insert("cat");
+		freq.insert("bob");
+		freq.insert("cat");
+		
+        int answer = freq.getCount("cat");
+        int expected = 3;
+        assertEquals(expected, answer);
+	}
+	
+	@Test
+	public void testInsert2() {
+		Frequency<String> freq = new Frequency<>();
+		freq.insert("alice");
+		freq.insert("alice");
+		String answer = freq.getWords(1).trim();
+		assertEquals("(alice,2)", answer);
+	}
+	
+	@Test
+	public void testIterator1() {
+		
+		Frequency<String> freq = new Frequency<>();
+		freq.insert("alice");
+		freq.insert("alice");
+		freq.insert("cat");
+		freq.insert("bob");
+		freq.insert("cat");
+		freq.insert("bob");
+		freq.insert("cat");
+		
+		StringBuilder strFrequency = new StringBuilder();
+        for(String s: freq){
+        	String t = "("+s +","+freq.getCount(s)+")";
+            strFrequency.append(t);
+            strFrequency.append(",");
+            
+        }
+        String answer =  strFrequency.toString();
+        String expected = "(cat,3),(alice,2),(bob,2),";
+        assertEquals(expected, answer);
+	}
+	
+  /*
+  */
+
+  //RELEASE TESTS
+
+	
+  //SECRET TESTS
+  /*
+  */
+
+
+  public static void main(String[] args){
+    Result result = JUnitCore.runClasses(Tests.class);
+    for (Failure failure : result.getFailures()) {
+      System.out.println(failure.toString());
+    }
+  }
+}
