@@ -8,8 +8,8 @@ In this assignment, you will use a doubly linked list to manage blocks of memory
 # Objectives
 This project will allow you to practice doubly linked lists and familiarize you with some concepts involved with explicit memory management.
 
-#Background
-In order to store information on a computer, continuous memory space must be reserved and marked for certain data. This process is called Allocation. When information is deleted, it is called deallocation, and it marks memory space as free or available for use. This project will implement a simplified recreation of this memory management, using a doubly linked list to keep track of what memory is allocated and what memory is free.
+# Background
+In order to store information on a computer, contiguous memory space must be reserved and marked for certain data. This process is called Allocation. When information is deleted, it is called deallocation, and it marks memory space as free or available for use. This project will implement a simplified recreation of this memory management, using a doubly linked list to keep track of what memory is allocated and what memory is free.
 
 # Manager Class
 The manager class is in charge of handling memory allocation/deallocation and performing the necessary bookkeeping required to do so. The constructor of this class
@@ -45,7 +45,7 @@ When a block is found using the appropriate fit policy, either it is exactly wha
 
 As shown in the above diagram, the block of size 10 was split into two new blocks, with the first being the requested block and the second being the leftover block. Also notice how the avialable blocks list changed.
 
-if the block of size 11 had instead a size of 7, then under the best fit policy it would have zero extra, so if we were using the best fit policy it would be selected, making a memory diagram as follows:
+If the block of size 11 had instead a size of 7, then under the best fit policy it would have zero extra, so if we were using the best fit policy it would be selected, making a memory diagram as follows:
 
 ![memory after malloc 7 with best fit](./img/malloc_7_best_fit.png)
 
