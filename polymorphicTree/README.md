@@ -7,8 +7,6 @@
 
 You will be completeing recursive tree functions which are based on a polymorhpic 
 tree class. You will be doing error handling, recursion, polymorphism. 
-Additionally, you will also be filling out a txt file with your analysis and 
-testing data. 
 
 ## Layout of Project
 
@@ -16,9 +14,6 @@ testing data.
 doc
   the files to tell you what to do. index.html is where to start
 src
-  performanceReport
-    TreeSpeed.java
-    performaceReport.txt
   tests
     StudentTests.java
     Tests.java
